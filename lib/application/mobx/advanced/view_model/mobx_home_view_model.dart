@@ -1,5 +1,5 @@
 import 'package:mobx/mobx.dart';
-import 'package:state_app_samples/application/mobx/advanced/counter_model.dart';
+import 'package:state_app_samples/application/mobx/advanced/model/counter_model.dart';
 
 part 'mobx_home_view_model.g.dart';
 

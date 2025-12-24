@@ -22,19 +22,25 @@ class _MobxHomePageState extends State<MobxHomePage> {
         title: Text("MobX Example"),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: .center,
-          children: [
-            const Text('You have pushed the button this many times:'),
-            Observer(
+        child: Builder(
+          builder: (context) {
+            return Observer(
               builder: (context) {
-                return Text(
-                  '${_mobxHomeViewModel.counterModel.counterAmount}',
-                  style: Theme.of(context).textTheme.headlineMedium,
+                return Column(
+                  mainAxisAlignment: .center,
+                  children: [
+                    Text(_mobxHomeViewModel.counterModel.title == ""
+                        ? 'You have pushed the button this many times:'
+                        : _mobxHomeViewModel.counterModel.title),
+                    Text(
+                      '${_mobxHomeViewModel.counterModel.counterAmount}',
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    )
+                  ],
                 );
               }
-            ),
-          ],
+            );
+          }
         ),
       ),
       floatingActionButton: FloatingActionButton(
