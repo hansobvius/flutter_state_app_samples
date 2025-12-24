@@ -1,4 +1,4 @@
-import 'package:state_app_samples/reosurces/model_core.dart';
+import 'package:state_app_samples/resources/model_core.dart';
 
 class CounterModel extends ModelCore {
   CounterModel({String? title, int? counterAmount})
