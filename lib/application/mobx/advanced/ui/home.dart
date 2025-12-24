@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:state_app_samples/application/mobx/view_model/mobx_home_view_model.dart';
+
+import '../view_model/mobx_home_view_model.dart';
 
 class MobxHomePage extends StatefulWidget {
   const MobxHomePage({super.key});
@@ -28,7 +29,7 @@ class _MobxHomePageState extends State<MobxHomePage> {
             Observer(
               builder: (context) {
                 return Text(
-                  '${_mobxHomeViewModel.counter}',
+                  '${_mobxHomeViewModel.counterModel.counterAmount}',
                   style: Theme.of(context).textTheme.headlineMedium,
                 );
               }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:state_app_samples/application/mobx/ui/home.dart';
+// import 'package:state_app_samples/application/mobx/simple/ui/home.dart';
+import 'package:state_app_samples/application/mobx/advanced/ui/home.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
