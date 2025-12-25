@@ -3,7 +3,7 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 
 import '../view_model/mobx_home_view_model.dart';
 
-class MobxHomePage extends StatelessWidget {
+class HomePage extends StatelessWidget {
   final MobxHomeViewModel _mobxHomeViewModel = MobxHomeViewModel();
 
   @override

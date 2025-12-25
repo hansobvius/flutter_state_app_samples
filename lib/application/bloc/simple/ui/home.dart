@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../view_model/mobx_home_view_model.dart';
+import '../view_model/bloc_home_view_model.dart';
 
 class HomePage extends StatelessWidget {
-  final MobxHomeViewModel _mobxHomeViewModel = MobxHomeViewModel();
+  HomePage({super.key});
+
+  final BlocHomeViewModel _blocHomeViewModel = BlocHomeViewModel(0);
 
   @override
   Widget build(BuildContext context) {
@@ -18,10 +20,11 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: .center,
           children: [
             const Text('You have pushed the button this many times:'),
-            Observer(
-              builder: (context) {
+            BlocBuilder(
+              bloc: _blocHomeViewModel,
+              builder: (context, value) {
                 return Text(
-                  '${_mobxHomeViewModel.counter}',
+                  '$value',
                   style: Theme.of(context).textTheme.headlineMedium,
                 );
               },
@@ -30,7 +33,7 @@ class HomePage extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _mobxHomeViewModel.increaseCounter,
+        onPressed: _blocHomeViewModel.increaseCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ),
