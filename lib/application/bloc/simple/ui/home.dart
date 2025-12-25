@@ -18,7 +18,7 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: .center,
-          children: [
+          children: [ 
             const Text('You have pushed the button this many times:'),
             BlocBuilder(
               bloc: _blocHomeViewModel,
