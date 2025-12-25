@@ -3,15 +3,7 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 
 import '../view_model/mobx_home_view_model.dart';
 
-class MobxHomePage extends StatefulWidget {
-  const MobxHomePage({super.key});
-
-  @override
-  State<MobxHomePage> createState() => _MobxHomePageState();
-}
-
-class _MobxHomePageState extends State<MobxHomePage> {
-
+class MobxHomePage extends StatelessWidget {
   final MobxHomeViewModel _mobxHomeViewModel = MobxHomeViewModel();
 
   @override
@@ -32,7 +24,7 @@ class _MobxHomePageState extends State<MobxHomePage> {
                   '${_mobxHomeViewModel.counter}',
                   style: Theme.of(context).textTheme.headlineMedium,
                 );
-              }
+              },
             ),
           ],
         ),
