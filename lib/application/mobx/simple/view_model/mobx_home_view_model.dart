@@ -2,10 +2,9 @@ import 'package:mobx/mobx.dart';
 
 part 'mobx_home_view_model.g.dart';
 
-class MobxHomeViewModel = _MobxHomeViewModel with _$MobxHomeViewModel;
+class MobxHomeViewModel = MobxHomeViewModelState with _$MobxHomeViewModel;
 
-abstract class _MobxHomeViewModel with Store {
-
+abstract class MobxHomeViewModelState with Store {
   @observable
   int counter = 0;
 

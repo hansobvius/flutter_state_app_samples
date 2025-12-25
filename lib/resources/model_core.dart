@@ -1,5 +1,5 @@
 abstract class ModelCore {
-  ModelCore({required String this.title, required int this.counterAmount});
+  ModelCore({String title = "", int counterAmount = 0});
 
   String title = "";
 

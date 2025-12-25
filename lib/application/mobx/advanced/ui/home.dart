@@ -11,7 +11,6 @@ class MobxHomePage extends StatefulWidget {
 }
 
 class _MobxHomePageState extends State<MobxHomePage> {
-
   final MobxHomeViewModel _mobxHomeViewModel = MobxHomeViewModel();
 
   @override
@@ -29,18 +28,20 @@ class _MobxHomePageState extends State<MobxHomePage> {
                 return Column(
                   mainAxisAlignment: .center,
                   children: [
-                    Text(_mobxHomeViewModel.counterModel.title == ""
-                        ? 'You have pushed the button this many times:'
-                        : _mobxHomeViewModel.counterModel.title),
+                    Text(
+                      _mobxHomeViewModel.counterModel.title == ""
+                          ? 'You have pushed the button this many times:'
+                          : _mobxHomeViewModel.counterModel.title,
+                    ),
                     Text(
                       '${_mobxHomeViewModel.counterModel.counterAmount}',
                       style: Theme.of(context).textTheme.headlineMedium,
-                    )
+                    ),
                   ],
                 );
-              }
+              },
             );
-          }
+          },
         ),
       ),
       floatingActionButton: FloatingActionButton(
