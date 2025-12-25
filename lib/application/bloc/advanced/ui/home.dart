@@ -5,9 +5,7 @@ import 'package:state_app_samples/application/bloc/advanced/model/counter_model.
 import '../view_model/bloc_home_view_model.dart';
 
 class HomePage extends StatelessWidget {
-  HomePage({super.key});
-
-  final BlocHomeViewModel _blocHomeViewModel = BlocHomeViewModel();
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +19,7 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: .center,
           children: [
             BlocBuilder<BlocHomeViewModel, CounterModel>(
-              bloc: _blocHomeViewModel,
+              bloc: BlocHomeViewModel.blocHomeViewModelInstance,
               builder: (context, value) {
                 return Column(
                   mainAxisAlignment: .center,
@@ -48,7 +46,7 @@ class HomePage extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _blocHomeViewModel.increaseCounter,
+        onPressed: BlocHomeViewModel.blocHomeViewModelInstance.increaseCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ),
