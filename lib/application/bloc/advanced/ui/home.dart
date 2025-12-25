@@ -7,11 +7,7 @@ import '../view_model/bloc_home_view_model.dart';
 class HomePage extends StatelessWidget {
   HomePage({super.key});
 
-  final BlocHomeViewModel _blocHomeViewModel = BlocHomeViewModel(
-    CounterModel(
-      title: "",
-      counterAmount: 0
-    ));
+  final BlocHomeViewModel _blocHomeViewModel = BlocHomeViewModel();
 
   @override
   Widget build(BuildContext context) {
