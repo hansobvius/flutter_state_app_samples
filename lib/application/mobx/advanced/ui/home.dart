@@ -4,6 +4,9 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 import '../view_model/mobx_home_view_model.dart';
 
 class HomePage extends StatelessWidget {
+
+  HomePage({super.key});
+
   final MobxHomeViewModel _mobxHomeViewModel = MobxHomeViewModel();
 
   @override
@@ -11,28 +14,24 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text("MobX Example"),
+        title: Text("Advanced MobX Example"),
       ),
       body: Center(
-        child: Builder(
+        child: Observer(
           builder: (context) {
-            return Observer(
-              builder: (context) {
-                return Column(
-                  mainAxisAlignment: .center,
-                  children: [
-                    Text(
-                      _mobxHomeViewModel.counterModel.title == ""
-                          ? 'You have pushed the button this many times:'
-                          : _mobxHomeViewModel.counterModel.title,
-                    ),
-                    Text(
-                      '${_mobxHomeViewModel.counterModel.counterAmount}',
-                      style: Theme.of(context).textTheme.headlineMedium,
-                    ),
-                  ],
-                );
-              },
+            return Column(
+              mainAxisAlignment: .center,
+              children: [
+                Text(
+                  _mobxHomeViewModel.counterModel.title == ""
+                      ? 'You have pushed the button this many times:'
+                      : _mobxHomeViewModel.counterModel.title,
+                ),
+                Text(
+                  '${_mobxHomeViewModel.counterModel.counterAmount}',
+                  style: Theme.of(context).textTheme.headlineMedium,
+                ),
+              ],
             );
           },
         ),

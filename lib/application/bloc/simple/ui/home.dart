@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text("MobX Example"),
+        title: Text("Simple BloC Example"),
       ),
       body: Center(
         child: Column(
