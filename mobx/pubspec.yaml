@@ -17,10 +17,6 @@ dependencies:
   mobx: ^2.5.0
   flutter_mobx: ^2.3.0
 
-  # BloC
-  flutter_bloc: ^9.1.1
-  flutter_riverpod: ^3.1.0
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -28,7 +24,6 @@ dev_dependencies:
 
   # MobX dependecy for code generator
   mobx_codegen: ^2.0.0
-  riverpod_lint: ^3.1.0
 
 flutter:
   uses-material-design: true
