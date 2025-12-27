@@ -2,9 +2,20 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "state_app_samples (Chrome)",
+            "name": "Bloc App",
             "request": "launch",
             "type": "dart",
+            "program": "${workspaceFolder}/bloc/lib/main.dart",
+            "cwd": "${workspaceFolder}/bloc",
+            "deviceId": "chrome",
+            "flutterMode": "debug"
+        },
+        {
+            "name": "MobX App",
+            "request": "launch",
+            "type": "dart",
+            "program": "${workspaceFolder}/mobx/lib/main.dart",
+            "cwd": "${workspaceFolder}/mobx",
             "deviceId": "chrome",
             "flutterMode": "debug"
         }
