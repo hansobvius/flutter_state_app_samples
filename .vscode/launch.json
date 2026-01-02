@@ -20,10 +20,19 @@
             "flutterMode": "debug"
         },
         {
-            "name": "MobX App",
+            "name": "MobX Simple App",
             "request": "launch",
             "type": "dart",
-            "program": "${workspaceFolder}/mobx/lib/main.dart",
+            "program": "${workspaceFolder}/mobx/lib/simple/main.dart",
+            "cwd": "${workspaceFolder}/mobx",
+            "deviceId": "chrome",
+            "flutterMode": "debug"
+        },
+        {
+            "name": "MobX Advanced App",
+            "request": "launch",
+            "type": "dart",
+            "program": "${workspaceFolder}/mobx/lib/Advanced/main.dart",
             "cwd": "${workspaceFolder}/mobx",
             "deviceId": "chrome",
             "flutterMode": "debug"

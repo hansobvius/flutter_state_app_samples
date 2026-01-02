@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'mobx/simple/ui/home.dart';
+import '../../simple/application/ui/home.dart';
 // import 'mobx/advanced/ui/home.dart';
 
 class App extends StatelessWidget {
