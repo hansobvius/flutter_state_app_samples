@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:state_app_samples/application/bloc/advanced/model/counter_model.dart';
+import 'package:state_app_samples/advanced/application/model/counter_model.dart';
 
 import '../view_model/bloc_home_view_model.dart';
 

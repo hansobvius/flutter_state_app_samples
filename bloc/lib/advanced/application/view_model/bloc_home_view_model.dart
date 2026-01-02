@@ -1,5 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:state_app_samples/application/bloc/advanced/model/counter_model.dart';
+import 'package:state_app_samples/advanced/application/model/counter_model.dart';
 
 class BlocHomeViewModel extends Cubit<CounterModel> {
 

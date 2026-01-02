@@ -2,10 +2,19 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Bloc App",
+            "name": "Bloc Simple App",
             "request": "launch",
             "type": "dart",
-            "program": "${workspaceFolder}/bloc/lib/main.dart",
+            "program": "${workspaceFolder}/bloc/lib/simple/main.dart",
+            "cwd": "${workspaceFolder}/bloc",
+            "deviceId": "chrome",
+            "flutterMode": "debug"
+        },
+        {
+            "name": "Bloc Advanced App",
+            "request": "launch",
+            "type": "dart",
+            "program": "${workspaceFolder}/bloc/lib/advanced/main.dart",
             "cwd": "${workspaceFolder}/bloc",
             "deviceId": "chrome",
             "flutterMode": "debug"
