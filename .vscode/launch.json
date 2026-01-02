@@ -38,13 +38,22 @@
             "flutterMode": "debug"
         },
         {
-            "name": "Riverpod App",
+            "name": "Riverpod Simple App",
             "request": "launch",
             "type": "dart",
-            "program": "${workspaceFolder}/riverpod/lib/main.dart",
+            "program": "${workspaceFolder}/riverpod/lib/simple/main.dart",
             "cwd": "${workspaceFolder}/riverpod",
             "deviceId": "chrome",
             "flutterMode": "debug"
-        }
+        },
+        {
+            "name": "Riverpod Advanced App",
+            "request": "launch",
+            "type": "dart",
+            "program": "${workspaceFolder}/riverpod/lib/advanced/main.dart",
+            "cwd": "${workspaceFolder}/riverpod",
+            "deviceId": "chrome",
+            "flutterMode": "debug"
+        },
     ]
 }
