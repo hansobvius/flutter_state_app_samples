@@ -5,7 +5,7 @@ import '../view_model/riverpod_home_view_model.dart';
 
 class HomePage extends ConsumerWidget {
 
-  HomePage({super.key});
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

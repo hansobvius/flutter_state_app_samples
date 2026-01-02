@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'riverpod/simple/ui/home.dart';
-// import 'mobx/advanced/ui/home.dart';
+// import 'riverpod/simple/ui/home.dart';
+import 'riverpod/advanced/ui/home.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
