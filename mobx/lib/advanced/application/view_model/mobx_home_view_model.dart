@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:mobx/mobx.dart';
-import 'package:state_app_samples/application/mobx/advanced/model/counter_model.dart';
+import 'package:state_app_samples/advanced/application/model/counter_model.dart';
 
 part 'mobx_home_view_model.g.dart';
 

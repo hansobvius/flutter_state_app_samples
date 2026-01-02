@@ -7,7 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:state_app_samples/application/riverpod/simple/ui/home.dart';
+import 'package:state_app_samples/simple/application/ui/home.dart' show HomePage;
 
 
 void main() {

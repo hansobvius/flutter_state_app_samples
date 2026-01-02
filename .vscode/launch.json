@@ -2,31 +2,58 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Bloc App",
+            "name": "Bloc Simple App",
             "request": "launch",
             "type": "dart",
-            "program": "${workspaceFolder}/bloc/lib/main.dart",
+            "program": "${workspaceFolder}/bloc/lib/simple/main.dart",
             "cwd": "${workspaceFolder}/bloc",
             "deviceId": "chrome",
             "flutterMode": "debug"
         },
         {
-            "name": "MobX App",
+            "name": "Bloc Advanced App",
             "request": "launch",
             "type": "dart",
-            "program": "${workspaceFolder}/mobx/lib/main.dart",
+            "program": "${workspaceFolder}/bloc/lib/advanced/main.dart",
+            "cwd": "${workspaceFolder}/bloc",
+            "deviceId": "chrome",
+            "flutterMode": "debug"
+        },
+        {
+            "name": "MobX Simple App",
+            "request": "launch",
+            "type": "dart",
+            "program": "${workspaceFolder}/mobx/lib/simple/main.dart",
             "cwd": "${workspaceFolder}/mobx",
             "deviceId": "chrome",
             "flutterMode": "debug"
         },
         {
-            "name": "Riverpod App",
+            "name": "MobX Advanced App",
             "request": "launch",
             "type": "dart",
-            "program": "${workspaceFolder}/riverpod/lib/main.dart",
+            "program": "${workspaceFolder}/mobx/lib/Advanced/main.dart",
+            "cwd": "${workspaceFolder}/mobx",
+            "deviceId": "chrome",
+            "flutterMode": "debug"
+        },
+        {
+            "name": "Riverpod Simple App",
+            "request": "launch",
+            "type": "dart",
+            "program": "${workspaceFolder}/riverpod/lib/simple/main.dart",
             "cwd": "${workspaceFolder}/riverpod",
             "deviceId": "chrome",
             "flutterMode": "debug"
-        }
+        },
+        {
+            "name": "Riverpod Advanced App",
+            "request": "launch",
+            "type": "dart",
+            "program": "${workspaceFolder}/riverpod/lib/advanced/main.dart",
+            "cwd": "${workspaceFolder}/riverpod",
+            "deviceId": "chrome",
+            "flutterMode": "debug"
+        },
     ]
 }
