@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../view_model/bloc_home_view_model.dart';
+import '../view_model/listenable_builder_home_view_model.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({super.key});
