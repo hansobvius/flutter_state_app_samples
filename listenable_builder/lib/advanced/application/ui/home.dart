@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text("Advanced BloC Example"),
+        title: Text("Advanced Listenable Builder Example"),
       ),
       body: Center(
         child: Column(
