@@ -55,5 +55,23 @@
             "deviceId": "chrome",
             "flutterMode": "debug"
         },
+        {
+            "name": "Listenable Builder Simple App",
+            "request": "launch",
+            "type": "dart",
+            "program": "${workspaceFolder}/listenable_builder/lib/simple/main.dart",
+            "cwd": "${workspaceFolder}/listenable_builder",
+            "deviceId": "chrome",
+            "flutterMode": "debug"
+        },
+        {
+            "name": "Listenable Builder Advanced App",
+            "request": "launch",
+            "type": "dart",
+            "program": "${workspaceFolder}/listenable_builder/lib/advanced/main.dart",
+            "cwd": "${workspaceFolder}/listenable_builder",
+            "deviceId": "chrome",
+            "flutterMode": "debug"
+        },
     ]
 }
